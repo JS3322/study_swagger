@@ -20,13 +20,14 @@ public class GetController {
 
     // http://localhost:8080/api/v1/get-api/hello
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    @ApiOperation(value = "hello, world api", notes = "hellow world swagger check")
+    @ApiOperation(value = "hello api", notes = "hello world swagger check")
     public String getHello() {
-        return "Hello Around Hub Studio!";
+        return "Hello cleancode api!";
     }
 
 
-    @ApiOperation(value = "test", notes = "테스트입니다")
+    // http://localhost:8080/api/v1/get-api/board
+    @ApiOperation(value = "test", notes = "테스트")
     @ApiResponses({
             @ApiResponse(code = 200, message = "ok"),
             @ApiResponse(code = 404, message = "page not found!")
